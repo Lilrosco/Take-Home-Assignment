@@ -1,0 +1,5 @@
+require_relative 'crypto_purchaser/crypto_exchange_exception'
+require_relative 'crypto_purchaser/crypto_rate_fetcher'
+require_relative 'crypto_purchaser/currency_to_crypto_exchange'
+
+module CryptoPurchaser; end
