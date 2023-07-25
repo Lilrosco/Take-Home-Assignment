@@ -35,14 +35,14 @@ inputs = [
 inputs.each_with_index do |input, idx|
   begin
     crypto_exchange = JustWorks::CryptoPurchaser::CurrencyToCryptoExchange.new(
-	  btc_ratio: input[:btc_ratio],
-	  eth_ratio: input[:eth_ratio],
-	  currency: input[:currency]
-	)
+      btc_ratio: input[:btc_ratio],
+      eth_ratio: input[:eth_ratio],
+      currency: input[:currency]
+    )
 
     purchase_hash = crypto_exchange.determine_btc_and_eth_purchase(
-	  amount: input[:amount]
-	)
+      amount: input[:amount]
+    )
 
     current_currency = crypto_exchange.currency
     btc_ratio = crypto_exchange.btc_ratio

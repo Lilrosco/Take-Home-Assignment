@@ -9,9 +9,9 @@ module JustWorks
 	  ##
 	  # Creates a new StandardError with a passed in message
 	  # @param message [String] the message describing the error that occurred
-	  def initialize(message)
-	    super(message)
-	  end
-	end
+      def initialize(message)
+        super(message)
+      end
+    end
   end
 end

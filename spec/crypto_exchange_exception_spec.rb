@@ -9,6 +9,6 @@ describe CryptoExchangeException do
   
   it "returns expected error message" do
     @exception = CryptoExchangeException.new(@err_msg)
-	expect(@exception.message).to eq @err_msg
+    expect(@exception.message).to eq @err_msg
   end
 end
