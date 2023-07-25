@@ -6,9 +6,9 @@ module JustWorks
   module CryptoPurchaser
     class CryptoExchangeException < StandardError
 	  
-	  ##
-	  # Creates a new StandardError with a passed in message
-	  # @param message [String] the message describing the error that occurred
+      ##
+      # Creates a new StandardError with a passed in message
+      # @param message [String] the message describing the error that occurred
       def initialize(message)
         super(message)
       end
